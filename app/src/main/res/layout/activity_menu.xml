@@ -23,49 +23,63 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/menu_1"
-            android:text="Petunjuk Penggunaan">
+            android:text="Petunjuk Penggunaan"
+            app:icon="@drawable/ic_guide_white24dp"
+            app:iconSize="@dimen/menu_icon_size">
         </com.google.android.material.button.MaterialButton>
         <com.google.android.material.button.MaterialButton
             style="@style/MenuButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/menu_2"
-            android:text="KI, KD, Indikator">
+            android:text="KI, KD, Indikator"
+            app:icon="@drawable/ic_kikd_white_24dp"
+            app:iconSize="@dimen/menu_icon_size">
         </com.google.android.material.button.MaterialButton>
         <com.google.android.material.button.MaterialButton
             style="@style/MenuButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/menu_3"
-            android:text="Pengenalan Tokoh">
+            android:text="Pengenalan Tokoh"
+            app:icon="@drawable/ic_tokoh_24dp"
+            app:iconSize="@dimen/menu_icon_size">
         </com.google.android.material.button.MaterialButton>
         <com.google.android.material.button.MaterialButton
             style="@style/MenuButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/menu_4"
-            android:text="Daftar Cerita">
+            android:text="Daftar Cerita"
+            app:icon="@drawable/ic_daftar_cerita_24dp"
+            app:iconSize="@dimen/menu_icon_size">
         </com.google.android.material.button.MaterialButton>
         <com.google.android.material.button.MaterialButton
             style="@style/MenuButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/menu_5"
-            android:text="Rangkuman">
+            android:text="Rangkuman"
+            app:icon="@drawable/ic_rangkuman24dp"
+            app:iconSize="@dimen/menu_icon_size">
         </com.google.android.material.button.MaterialButton>
         <com.google.android.material.button.MaterialButton
             style="@style/MenuButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/menu_6"
-            android:text="Profil">
+            android:text="Profil"
+            app:icon="@drawable/ic_profile_24dp"
+            app:iconSize="@dimen/menu_icon_size">
         </com.google.android.material.button.MaterialButton>
         <com.google.android.material.button.MaterialButton
             style="@style/MenuButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/menu_7"
-            android:text="Tentang Aplikasi">
+            android:text="Tentang Aplikasi"
+            app:icon="@drawable/ic_tentang_24dp"
+            app:iconSize="@dimen/menu_icon_size">
         </com.google.android.material.button.MaterialButton>
 
     </LinearLayout>

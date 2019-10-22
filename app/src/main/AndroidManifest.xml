@@ -17,7 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".menu.InfoActivity"></activity>
+        <activity android:name=".menu.ProfileActivity" />
+        <activity android:name=".menu.RangkumanActivity" />
+        <activity android:name=".menu.StoryListActivity" />
+        <activity android:name=".menu.TokohActivity" />
+        <activity android:name=".menu.IndicatorActivity" />
+        <activity android:name=".menu.GuideActivity" />
+        <activity android:name=".MenuActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
