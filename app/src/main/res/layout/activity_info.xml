@@ -1,8 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_menu"
     tools:context=".menu.InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TENTANG APLIKASI" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#8cffffff"
+            android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="3dp"
+                android:textSize="18dp"
+                android:text="Aplikasi ini berisi tentang materi pokok Bentuk Aljabar berdasarkan buku Matematika SMP Kelas VII  Semester 1 Revisi 2017 yang  dikemas dalam bentuk komik  interaktif dengan pendekatan kontekstual.\n\nVersi Aplikasi
+                \n\t\t\t\t\t\t\t\t1.0.0\n\nRilis\n\t\t\t\t\t\t\t\t20 Oktober 2020"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="20dp"
+                android:textSize="18dp"
+                android:text="Programmer\nM Nurilman Baehaqi\n(mnurilmanbaehaqi@gmail.com"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
