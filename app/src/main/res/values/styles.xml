@@ -35,4 +35,22 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="Title" parent="TextAppearance.AppCompat.Headline">
+        <item name="fontFamily">@font/bauh93</item>
+        <item name="android:textColor">@color/backgroundButton</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">30dp</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1.6</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_marginVertical">50dp</item>
+    </style>
+
+    <style name="Profile_Text" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontFamily">@font/hobo</item>
+        <item name="android:layout_marginVertical">15dp</item>
+    </style>
+
 </resources>

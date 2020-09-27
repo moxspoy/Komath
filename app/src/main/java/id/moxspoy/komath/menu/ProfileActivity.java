@@ -1,6 +1,10 @@
 package id.moxspoy.komath.menu;
 
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,4 +17,29 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
     }
+
+    public void handleInstagramButton(View view) {
+        final String INSTAGRAM_ADDRESS = "https://instagram.com/wulans.sari_?igshid=91tp0j8q1ocp";
+        Uri uri = Uri.parse(INSTAGRAM_ADDRESS);
+        Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+
+        likeIng.setPackage("com.instagram.android");
+
+        try {
+            startActivity(likeIng);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    uri));
+        }
+    }
+
+    public void handleGmailButton(View view) {
+        final String EMAIL_ADDRESS = "wulan9703@gmail.com";
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                "mailto", EMAIL_ADDRESS, null));
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "From Application");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "Hallo,");
+        startActivity(Intent.createChooser(emailIntent, "Send email..."));
+    }
 }
+
