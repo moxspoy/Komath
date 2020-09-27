@@ -44,7 +44,7 @@
             android:gravity="center"/>
 
         <ImageButton
-            android:layout_width="60dp"
+            android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:paddingVertical="4dp"
@@ -55,7 +55,7 @@
             android:src="@drawable/gmail"/>
 
         <ImageButton
-            android:layout_width="60dp"
+            android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:paddingVertical="4dp"
