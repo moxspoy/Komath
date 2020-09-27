@@ -37,8 +37,11 @@ public class ProfileActivity extends AppCompatActivity {
         final String EMAIL_ADDRESS = "wulan9703@gmail.com";
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                 "mailto", EMAIL_ADDRESS, null));
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "From Application");
-        emailIntent.putExtra(Intent.EXTRA_TEXT, "Hallo,");
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Komentar/Saran Tentang Kommika");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "Halo!\n" +
+                "Nama saya ....... dari ........\n" +
+                "\n" +
+                "Komentar/Saran (pilih salah satu atau boleh juga keduanya) saya terkait kommika, yaitu:");
         startActivity(Intent.createChooser(emailIntent, "Send email..."));
     }
 }

@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.0"
     defaultConfig {
         applicationId "id.moxspoy.komath"
-        minSdkVersion 28
+        minSdkVersion 24
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
