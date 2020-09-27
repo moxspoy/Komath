@@ -7,15 +7,19 @@
     android:background="@color/backgroundButton"
     tools:context=".menu.GuideActivity">
 
-    <TextView
-        style="@style/MenuTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Petunjuk Penggunaan"
-        android:textSize="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ScrollView
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/guide" />
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
