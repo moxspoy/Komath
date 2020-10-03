@@ -17,7 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".menu.InfoActivity"></activity>
+        <activity android:name=".story.StoryActivity"></activity>
+        <activity android:name=".submenu.IndicatorContentActivity" />
+        <activity android:name=".menu.InfoActivity" />
         <activity android:name=".menu.ProfileActivity" />
         <activity android:name=".menu.RangkumanActivity" />
         <activity android:name=".menu.StoryListActivity" />
