@@ -3,6 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu.IndicatorActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menu.IndicatorActivity"
+    android:background="@drawable/background_menu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/MenuButton"
+                android:id="@+id/indicator_1"
+                android:layout_marginBottom="30dp"
+                android:text="Kompetensi Inti">
+            </com.google.android.material.button.MaterialButton>
+            <com.google.android.material.button.MaterialButton
+                style="@style/MenuButton"
+                android:id="@+id/indicator_2"
+                android:text="Kompetensi Dasar">
+            </com.google.android.material.button.MaterialButton>
+            <com.google.android.material.button.MaterialButton
+                style="@style/MenuButton"
+                android:layout_marginTop="30dp"
+                android:id="@+id/indicator_3"
+                android:text="Indikator">
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

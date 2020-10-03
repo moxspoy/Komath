@@ -13,7 +13,7 @@
         <item name="android:layout_width">320dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textColor">@color/backgroundButton</item>
+        <item name="android:textColor">@color/textColorButton</item>
         <item name="android:textSize">20dp</item>
         <item name="android:textStyle">bold</item>
         <item name="cornerRadius">30dp</item>
@@ -45,12 +45,23 @@
         <item name="android:shadowDy">2</item>
         <item name="android:shadowRadius">1.6</item>
         <item name="android:textSize">28dp</item>
-        <item name="android:layout_marginVertical">50dp</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginBottom">50dp</item>
     </style>
 
     <style name="Profile_Text" parent="TextAppearance.AppCompat.Body1">
         <item name="fontFamily">@font/hobo</item>
-        <item name="android:layout_marginVertical">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="ImageIndicator">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:visibility">gone</item>
     </style>
 
 </resources>
