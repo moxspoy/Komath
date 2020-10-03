@@ -22,6 +22,21 @@ android {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
     }
+
+    applicationVariants.all { variant ->
+
+        variant.outputs.all { output ->
+            def project = "kommika"
+            def SEP = "_"
+            def version = "v" + variant.versionName
+            def date = new Date()
+            def formattedDate = date.format('yyyy.MM.dd_HH.mm.ss')
+
+            def newApkName = project + SEP + version + SEP + formattedDate + ".apk"
+
+            outputFileName = new File(newApkName)
+        }
+    }
 }
 
 dependencies {
