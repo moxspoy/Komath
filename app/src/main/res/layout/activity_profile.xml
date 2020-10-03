@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:text="Profil Penulis"
             style="@style/Title"
+            android:textAllCaps="true"
             android:gravity="center"/>
         <TextView
             android:layout_width="match_parent"
