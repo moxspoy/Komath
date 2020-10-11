@@ -10,8 +10,6 @@ import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final int SPLASH_DISPLAY_LENGTH = 3000;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private void waiting() {
         /* New Handler to start the Menu-Activity
          * and close this Splash-Screen after some seconds.*/
+        int SPLASH_DISPLAY_LENGTH = 3000;
         new Handler(Looper.getMainLooper()).postDelayed(this::navigateToMenuActivity, SPLASH_DISPLAY_LENGTH);
     }
 
