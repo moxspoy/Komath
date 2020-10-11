@@ -35,14 +35,20 @@ public class ProfileActivity extends AppCompatActivity {
 
     public void handleGmailButton(View view) {
         final String EMAIL_ADDRESS = "wulan9703@gmail.com";
-        Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                "mailto", EMAIL_ADDRESS, null));
-        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Komentar/Saran Tentang Kommika");
-        emailIntent.putExtra(Intent.EXTRA_TEXT, "Halo!\n" +
+        final String SUBJECT = "Komentar/Saran Tentang Kommika";
+        final String BODY = "Halo!\n" +
                 "Nama saya ....... dari ........\n" +
                 "\n" +
-                "Komentar/Saran (pilih salah satu atau boleh juga keduanya) saya terkait kommika, yaitu:");
-        startActivity(Intent.createChooser(emailIntent, "Send email..."));
+                "Komentar/Saran (pilih salah satu atau boleh juga keduanya) saya terkait kommika, yaitu:";
+
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{EMAIL_ADDRESS});
+        intent.putExtra(Intent.EXTRA_SUBJECT, SUBJECT);
+        intent.putExtra(Intent.EXTRA_TEXT,BODY);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 }
 
