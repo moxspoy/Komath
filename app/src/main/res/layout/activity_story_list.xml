@@ -231,7 +231,7 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/cover_5"
+                android:src="@drawable/cover_6"
                 android:background="@color/colorPrimary"
                 android:adjustViewBounds="true"/>
             <LinearLayout

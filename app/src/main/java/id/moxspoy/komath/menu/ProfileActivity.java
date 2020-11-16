@@ -36,10 +36,11 @@ public class ProfileActivity extends AppCompatActivity {
     public void handleGmailButton(View view) {
         final String EMAIL_ADDRESS = "wulan9703@gmail.com";
         final String SUBJECT = "Komentar/Saran Tentang Kommika";
-        final String BODY = "Halo!\n" +
-                "Nama saya ....... dari ........\n" +
+        final String BODY = "Dear, Author Kommika \n\n" +
+                "Halo!\n" +
+                "Nama saya ....... dari ........(nama sekolah atau instansi)\n" +
                 "\n" +
-                "Komentar/Saran (pilih salah satu atau boleh juga keduanya) saya terkait kommika, yaitu:";
+                "Komentar dan/atau saran saya terkait Kommika, yaitu:\n\n\n\nTerimakasih";
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this

@@ -26,7 +26,7 @@
             <com.google.android.material.button.MaterialButton
                 style="@style/MenuButton"
                 android:id="@+id/menu_2"
-                android:text="KI, KD, dan Indikator">
+                android:text="Pendahuluan">
             </com.google.android.material.button.MaterialButton>
             <com.google.android.material.button.MaterialButton
                 style="@style/MenuButton"
