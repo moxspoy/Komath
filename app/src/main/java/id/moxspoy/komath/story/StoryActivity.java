@@ -114,7 +114,7 @@ public class StoryActivity extends AppCompatActivity {
     }
 
     public void onRightAnswer(View view) {
-        AnswerPopup answerPopup = new AnswerPopup(this, R.drawable.tepat);
+        AnswerPopup answerPopup = new AnswerPopup(this, R.drawable.tepat_ep6);
         answerPopup.setCanceledOnTouchOutside(false);
         answerPopup.show();
         mediaPlayer = MediaPlayer.create(this, R.raw.right);
