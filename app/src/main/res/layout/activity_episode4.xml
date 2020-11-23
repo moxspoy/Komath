@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".story.Episode4Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:id="@+id/rv_episode4a"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_ep4_part_1_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ep4_answer_1a"
+                android:text="x + 4xy"
+                style="@style/OptionButton"
+                android:layout_marginBottom="5dp"
+                android:onClick="onWrongAnswer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/ep4_answer_1b"
+                android:textStyle="bold"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ep4_answer_1b"
+                android:text="x + 2y"
+                android:onClick="onRightAnswer"
+                android:layout_marginBottom="45dp"
+                app:layout_constraintBottom_toBottomOf="@id/img_ep4_part_1_20"
+                app:layout_constraintEnd_toEndOf="@id/img_ep4_part_1_20"
+                style="@style/OptionButton"
+                android:textStyle="bold"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:id="@+id/rv_episode4b"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_ep4_part_2_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ep4_answer_2a"
+                android:text="3x - y"
+                style="@style/OptionButton"
+                android:textStyle="normal"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onRightAnswer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/ep4_answer_2b" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ep4_answer_2b"
+                android:text="3x + y"
+                android:textStyle="normal"
+                android:onClick="onWrongAnswer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/OptionButton"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="115dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:id="@+id/rv_episode4c"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

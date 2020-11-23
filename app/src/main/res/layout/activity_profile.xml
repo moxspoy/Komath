@@ -3,6 +3,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu.ProfileActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menu.ProfileActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_menu">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profil Penulis"
+            style="@style/Title"
+            android:textAllCaps="true"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WULANSARI"
+            style="@style/Profile_Text"
+            android:textSize="16dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Profile_Text"
+            android:lineSpacingExtra="15sp"
+            android:textSize="14dp"
+            android:text="UNIVERSITAS NEGERI JAKARTA,\nMATEMATIKA DAN ILMU PENGETAHUAN ALAM\nPENDIDIKAN MATEMATIKA"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Profile_Text"
+            android:textSize="14dp"
+            android:text="email: wulan9703@gmail.com"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:paddingVertical="4dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corner_image_button"
+            android:scaleType="fitCenter"
+            android:onClick="handleGmailButton"
+            android:src="@drawable/gmail"/>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:paddingVertical="4dp"
+            android:scaleType="fitCenter"
+            android:onClick="handleInstagramButton"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/corner_image_button"
+            android:src="@drawable/ig"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

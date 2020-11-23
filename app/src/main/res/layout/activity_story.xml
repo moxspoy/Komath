@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".story.StoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_episode6a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_ep6_part_1_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ep6_answer_1a"
+                style="@style/OptionButtonCard"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onWrongAnswer"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toTopOf="@id/ep6_answer_1b"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <io.github.kexanie.library.MathView
+                    style="@style/OptionButtonCardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:text="$$\\frac{3}{5}x$$"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    app:engine="KaTeX"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ep6_answer_1b"
+                style="@style/OptionButtonCard"
+                android:layout_marginBottom="15dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onRightAnswer"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/img_ep6_part_1_10"
+                app:layout_constraintEnd_toEndOf="@id/img_ep6_part_1_10">
+                <io.github.kexanie.library.MathView
+                    style="@style/OptionButtonCardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:text="$$\\frac{7}{6}x$$"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    app:engine="KaTeX"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_episode6b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_ep6_part_2_06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ep6_answer_2a"
+                style="@style/OptionButtonCard"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onRightAnswer"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toTopOf="@id/ep6_answer_2b"
+                app:layout_constraintEnd_toEndOf="parent">
+                <io.github.kexanie.library.MathView
+                    style="@style/OptionButtonCardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:text="$$\\frac{17}{12x}$$"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    app:engine="KaTeX"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ep6_answer_2b"
+                style="@style/OptionButtonCard"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onWrongAnswer"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+                <io.github.kexanie.library.MathView
+                    style="@style/OptionButtonCardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:text="$$\\frac{17}{12x^2}$$"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    app:engine="KaTeX"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_episode6c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_ep6_part_3_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ep6_answer_3a"
+                style="@style/OptionButtonCard"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onRightAnswer"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toTopOf="@id/ep6_answer_3b"
+                app:layout_constraintEnd_toEndOf="parent">
+                <io.github.kexanie.library.MathView
+                    style="@style/OptionButtonCardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:text="$$\\frac{3x-4}{9x}$$"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    app:engine="KaTeX"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ep6_answer_3b"
+                style="@style/OptionButtonCard"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:onClick="onWrongAnswer"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+                <io.github.kexanie.library.MathView
+                    style="@style/OptionButtonCardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:text="$$\\frac{3x-4}{9xy}$$"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    app:engine="KaTeX"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_episode6d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -16,9 +16,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".menu.InfoActivity"></activity>
-        <activity android:name=".menu.ProfileActivity" />
+        <activity android:name=".story.Episode5Activity"></activity>
+        <activity android:name=".story.Episode4Activity" />
+        <activity android:name=".story.Episode3Activity">
+        </activity>
+        <activity android:name=".story.Episode2Activity" />
+        <activity android:name=".story.Episode1Activity" />
+        <activity android:name=".story.StoryActivity">
+
+        </activity>
+        <activity android:name=".submenu.IndicatorContentActivity" />
+        <activity android:name=".menu.InfoActivity" />
+        <activity android:name=".menu.ProfileActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <data android:scheme="mailto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".menu.RangkumanActivity" />
         <activity android:name=".menu.StoryListActivity" />
         <activity android:name=".menu.TokohActivity" />

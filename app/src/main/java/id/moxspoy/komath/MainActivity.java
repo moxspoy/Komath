@@ -5,11 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
-
-    private final int SPLASH_DISPLAY_LENGTH = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +22,8 @@ public class MainActivity extends AppCompatActivity {
     private void waiting() {
         /* New Handler to start the Menu-Activity
          * and close this Splash-Screen after some seconds.*/
-        new Handler().postDelayed(new Runnable(){
-            @Override
-            public void run() {
-                navigateToMenuActivity();
-            }
-        }, SPLASH_DISPLAY_LENGTH);
+        int SPLASH_DISPLAY_LENGTH = 3000;
+        new Handler(Looper.getMainLooper()).postDelayed(this::navigateToMenuActivity, SPLASH_DISPLAY_LENGTH);
     }
 
     private void navigateToMenuActivity() {
