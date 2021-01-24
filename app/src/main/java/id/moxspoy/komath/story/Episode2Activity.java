@@ -55,7 +55,6 @@ public class Episode2Activity extends AppCompatActivity {
             R.drawable.episode2_part1_25,
             R.drawable.episode2_part1_26,
             R.drawable.episode2_part1_27,
-            R.drawable.episode2_part1_28,
     };
 
     private final int[] fourthDataset = {
