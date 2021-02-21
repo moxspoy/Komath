@@ -14,12 +14,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/rangkuman_image"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            app:srcCompat="@drawable/rangkuman" />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:adjustViewBounds="true"
+               android:src="@drawable/rangkuman_01"
+               />
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/rangkuman_02"
+               android:adjustViewBounds="true"/>
+       </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
