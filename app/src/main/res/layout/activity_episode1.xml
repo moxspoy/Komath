@@ -30,25 +30,29 @@
                 />
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/ep1_answer_1a"
-                android:text="Huruf-huruf dalam alfabet"
+                android:text="Pengganti dari suatu huruf yang dilambangkan dengan huruf lainnya"
                 style="@style/OptionButton"
                 android:layout_marginBottom="5dp"
                 android:onClick="onWrongAnswer"
-                android:layout_height="70dp"
+                android:layout_height="90dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/ep1_answer_1b"
                 android:textStyle="bold"
+                android:layout_width="160dp"
+                android:textSize="12dp"
                 />
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/ep1_answer_1b"
-                android:text="Simbol yang mewakili nilai tertentu"
+                android:text="Pengganti dari suatu bilangan yang biasanya dilambangkan dengan huruf"
                 android:onClick="onRightAnswer"
                 android:layout_marginBottom="45dp"
                 app:layout_constraintBottom_toBottomOf="@id/img_ep1_part_1_16"
                 app:layout_constraintEnd_toEndOf="@id/img_ep1_part_1_16"
                 style="@style/OptionButton"
-                android:layout_height="70dp"
+                android:layout_height="100dp"
+                android:layout_width="160dp"
                 android:textStyle="bold"
+                android:textSize="12dp"
                 />
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.recyclerview.widget.RecyclerView
