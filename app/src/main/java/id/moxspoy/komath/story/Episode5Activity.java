@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -64,6 +65,7 @@ public class Episode5Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_episode5);
         initImages();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
     }
 
     private void initImages() {

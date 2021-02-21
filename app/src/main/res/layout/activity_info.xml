@@ -21,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="@color/blueDark"
             android:text="TENTANG APLIKASI" />
 
         <LinearLayout
@@ -36,7 +37,7 @@
                 android:textColor="@color/black"
                 android:lineSpacingExtra="3dp"
                 android:textSize="18dp"
-                android:text="Aplikasi ini berisi tentang materi pokok Bentuk Aljabar berdasarkan buku Matematika SMP Kelas VII  Semester 1 Revisi 2017 yang  dikemas dalam bentuk komik  interaktif dengan pendekatan kontekstual.\n\nVersi Aplikasi
+                android:text="Aplikasi ini berisi komik interaktif yang membahas tentang materi pokok Bentuk Aljabar dengan pendekatan kontekstual. Materi dibuat berdasarkan buku Matematika SMP Kelas VII Semester 1 Kurikulum 2013 Revisi 2017 yang diterbitkan oleh Kemdikbud dan ditulis oleh Abdur Rahman As'ari, dkk.\n\nVersi Aplikasi
                 \n\t\t\t\t\t\t\t\t1.0.0\n\nRilis\n\t\t\t\t\t\t\t\t20 Oktober 2020"/>
 
             <TextView

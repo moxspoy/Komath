@@ -2,6 +2,7 @@ package id.moxspoy.komath;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -41,6 +42,7 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         ButterKnife.bind(this);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
     }
 
     @OnClick(R.id.menu_1)

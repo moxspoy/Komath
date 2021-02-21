@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -77,6 +78,7 @@ public class Episode3Activity extends AppCompatActivity {
         setContentView(R.layout.activity_episode3);
         initImages();
         initScrollView();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
     }
 
     private void initScrollView() {

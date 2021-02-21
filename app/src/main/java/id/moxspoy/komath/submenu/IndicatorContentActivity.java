@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 
 import butterknife.BindView;
@@ -26,6 +27,7 @@ public class IndicatorContentActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         int res = getIntent().getIntExtra("ind", R.id.indicator_1);
         if(res == R.id.indicator_1) {
             imageView.setVisibility(View.VISIBLE);
